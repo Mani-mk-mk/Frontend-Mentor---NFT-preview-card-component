@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+	--main-bg: hsl(217, 54%, 11%);
+	--card-bg: hsl(216, 50%, 16%);
+	--line: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+	--cyan: hsl(178, 100%, 50%);
+	--soft-blue: hsl(215, 51%, 70%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Outfit", sans-serif;
+	width: 100vw;
+	font-size: 18px;
+	color: var(--soft-blue);
+	background-color: var(--main-bg);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 50vh;
+	height: 80vh;
+	background-color: var(--card-bg);
+	border-radius: 10px;
+	position: relative;
+}
+
+.card-img {
+	margin: 20px 25px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.card-img :hover {
+	cursor: pointer;
+}
+
+.hover-image {
+	width: 100%;
+	height: 98%;
+	top: 0;
+	position: absolute;
+	z-index: 5;
+	background-color: hsla(178, 100%, 50%, 0.603);
+	opacity: 0;
+}
+
+.hover-image:hover {
+	opacity: 1;
+}
+
+.hover-image img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card-text {
+	margin: 0 25px;
+	text-align: left;
+}
+
+.card-text h3 {
+	color: #fff;
+	font-weight: 600;
+	padding-bottom: 8px;
+}
+
+.card-text h3:hover {
+	cursor: pointer;
+	color: var(--cyan);
+}
+
+.card-text p {
+	color: var(--soft-blue);
+	font-weight: 300;
+}
+
+.equilibrium {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.icon-container {
+	padding: 15px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.icon img {
+	padding-right: 8px;
+}
+
+.icon h4 {
+	color: var(--cyan);
+}
+
+.icon-eth {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.icon-clock {
+	display: flex;
+	flex-direction: row;
+	color: var(--soft-blue);
+	font-weight: 300;
+	align-items: center;
+}
+
+hr {
+	color: var(--line);
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.avatar {
+	padding: 12px 0;
+	display: flex;
+	align-items: center;
+	padding-right: 8px;
+}
+
+.avatar img {
+	width: 50px;
+	border-radius: 50%;
+	border: 1px solid white;
+	margin-right: 25px;
+}
+
+.avatar span {
+	color: white;
+	padding-left: 3px;
+}
+
+.avatar span:hover {
+	color: var(--cyan);
+	cursor: pointer;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
